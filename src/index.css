@@ -1,0 +1,783 @@
+/* <............................      .......................> */
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+/* <------------------------- landing-page -----------------------> */
+.App {
+  overflow: hidden;
+}
+.form-control {
+  height: 40px !important;
+}
+
+.landingText {
+  z-index: 2;
+  -webkit-text-stroke: 2px black;
+}
+.btn-light {
+  color: black !important;
+  background-color: var(--light) !important;
+  border-color: var(--light) !important;
+  box-shadow: -20px 7px 15px 5px rgb(0 0 0 / 10%);
+}
+#landing-bg-div {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+#landing-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  opacity: 0.8;
+}
+#login-bg-div {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#login-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+.login-form-col {
+  background-color: #c0c0c0;
+  opacity: 0.9;
+}
+
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.login-col {
+  margin-right: -15px;
+  opacity: 0.9;
+}
+.register-form-col {
+  background-color: #c0c0c0;
+  opacity: 0.9;
+}
+.register-col {
+  margin-left: -15px;
+  opacity: 0.9;
+}
+.center-text {
+  text-align: center;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: grey;
+}
+.login-link {
+  color: #212529;
+}
+.login-link:hover {
+  color: seagreen;
+  font-weight: bold;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* <-------------------------pop-up-----------------------> */
+.container-select {
+  width: 90%;
+  border: 1px solid black;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10%;
+  overflow-y: auto;
+}
+.left-arrow {
+  height: 20px;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.select-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  border-bottom: 1px solid #8a9393;
+  padding: 0 10px 0 10px;
+  top: 0;
+  position: sticky;
+  background: white;
+}
+
+.select-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 3px 20px 3px; */
+  flex-direction: column;
+}
+.select-list-item {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 2px solid #d6d9d9;
+  align-items: center;
+  height: 80px;
+  padding-left: 10%;
+  cursor: pointer;
+}
+.select-list-item img {
+  width: 55px;
+  margin-right: 25px;
+}
+.select-list-item h5 {
+  font-size: medium;
+}
+
+.modal-content {
+  height: 528px;
+  width: 600px;
+}
+
+.buyer-select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buyer-select-container > .btn,
+.btn {
+  text-transform: uppercase;
+  width: 47%;
+  height: 40px;
+}
+.select-icon {
+  width: 50px;
+  height: 50px;
+  background: #cec0c0;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  /* border-radius: 3px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #807e7e;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #807e7e;
+}
+
+/*----------------Forum Page--------------------*/
+
+.forum-form-container {
+  flex-wrap: wrap;
+}
+
+.forum-required-field {
+  color: red;
+  font-size: "20px";
+}
+.forum-header {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+.forum-submit-container {
+  margin-top: 4rem;
+}
+.forum-bg {
+  background: url("./assets/images/forum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  /* opacity: 0.8; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1eb12;
+}
+
+.forum-form {
+  width: 80%;
+  height: 750px;
+  margin-top: 5%;
+}
+
+.forum-form .forum-input {
+  background-color: transparent;
+  height: 50px;
+  border: 1px solid black;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.forum-form .forum-input:focus {
+  background-color: transparent;
+  border: 1px solid white;
+  background-color: whitesmoke;
+  color: rgb(39, 137, 167);
+  opacity: 0.7;
+  text-decoration: solid;
+}
+
+.forum-form .forum-textarea {
+  background-color: transparent;
+  height: 180px !important;
+  border: 1px solid black;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.forum-form .forum-textarea:focus {
+  background-color: transparent;
+  color: rgb(39, 137, 167);
+  background-color: whitesmoke;
+  border: 1px solid white;
+  text-decoration: solid;
+  opacity: 0.7;
+}
+
+.forum-form label {
+  font-size: 20;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-outline {
+  background: transparent !important;
+  border: 3px solid white !important;
+  color: #fff !important;
+  height: 55px !important;
+}
+
+.social-nav {
+  width: 80px;
+  height: 300px;
+  position: absolute;
+  left: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-nav .nav-item {
+  width: 75%;
+  text-align: center;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* <............................    .......................> */
+
+/*      */
+#main-page-img {
+  height: 750px;
+  width: 100%;
+}
+#main-page-img-div {
+  position: fixed;
+  top: -36%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#buyer-form {
+  margin-top: 310px;
+  opacity: 0.7;
+}
+
+.buyer-btn {
+  padding: 10px;
+}
+
+.selection-condition-btn {
+  margin-bottom: 0.5rem;
+}
+
+#buyer-form input:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: none;
+}
+
+/* <............................      .......................> */
+#seller-bg-div {
+  position: fixed;
+  top: -40%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#seller-bg {
+  height: 100%;
+  width: 100%;
+}
+#formController {
+  width: 75%;
+  padding: 20px;
+  margin: 175px 200px 50px 200px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  opacity: 0.7;
+}
+#radioBtns {
+  padding-left: 15px;
+}
+#star {
+  color: red;
+}
+#predictionButton {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 15px 0px;
+}
+
+.selling-vehicle-button {
+  width: 100% !important;
+}
+
+.predict-price {
+  width: 15%;
+}
+
+/* <............................      .......................> */
+
+#about {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  place-content: center center;
+  padding: 5%;
+}
+
+.about-us-test-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.text {
+  white-space: pre;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-item {
+  position: relative;
+  width: 65%;
+  height: 75%;
+  place-self: center;
+  /* top: 15%; */
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: #212f3d;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  opacity: 0.8;
+  height: 0%;
+  transition-duration: 0.3s;
+}
+
+.main-item:hover .overlay {
+  height: 100%;
+  transition-duration: 0.3s;
+}
+
+
+/* <............................ made for responsive views .......................> */
+/*     */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  .buyer-select-container > .btn,
+  .btn {
+    width: 100%;
+    /* height: auto; */
+    /* margin: 8px 0px; */
+    font-size: 0.75rem;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+  .select-car-header {
+    font-size: 1rem;
+  }
+  .forum-form {
+    width: 100%;
+  }
+  /* .forum-bg {
+    height: 100vh;
+    background-position: initial;
+  } */
+  .social-nav {
+    position: unset;
+    flex-direction: row;
+  }
+  .social-nav .nav-item {
+    width: auto;
+    margin-right: 1rem;
+  }
+  .buyer-btn {
+    padding: 4px;
+  }
+  .main-page-type-button {
+    margin-right: 8px;
+  }
+  #main-page-img {
+    height: 760px;
+    width: 500px;
+  }
+
+  .buyer-select-container-mobile {
+    display: none;
+  }
+  #formController {
+    width: 100%;
+    margin: 24px 0px;
+  }
+  .predict-price {
+    width: 50%;
+  }
+  .landingText {
+    margin-top: 0px !important;
+  }
+  .text {
+    font-size: 18px;
+  }
+  
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  .landingText {
+    margin-top: -80px !important;
+  }
+  .buyer-select-container > .btn,
+  .btn {
+    text-transform: uppercase;
+    width: 47%;
+    height: 40px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+  .buyer-select-container > .btn,
+  .btn {
+    /* width: 100%; */
+    /* height: auto; */
+    /* margin: 4px 0px; */
+    /* font-size: 11px; */
+  }
+  .select-car-header {
+    font-size: 1.25rem;
+  }
+  .forum-form {
+    width: 80%;
+  }
+  .social-nav {
+    position: absolute;
+    flex-direction: column;
+  }
+  .buyer-btn {
+    padding: 16px;
+  }
+  #main-page-img {
+    height: 760px;
+    width: 100%;
+  }
+  .buyer-select-container-mobile {
+    display: none;
+  }
+  #formController {
+    width: 75%;
+    margin: 288px 200px 50px 200px;
+  }
+  #seller-bg-div {
+    top: -25%;
+  }
+  .predict-price {
+    width: 35%;
+  }
+  #predictionButton {
+    margin: 150px 0px 15px 0px;
+  }
+  .login-col.register-page {
+    padding-left: 0 !important;
+  }
+  .text {
+    font-size: 21px;
+  }
+}
+
+/* galaxy fold phone */
+@media only screen and (max-width: 55.75em) {
+  .register {
+    padding-top: 30%;
+  }
+
+  .card-body {
+    padding: 0 !important;
+  }
+  .selection-condition-btn {
+    font-size: 0.75rem !important;
+  }
+  .select-car-header {
+    font-size: 1rem;
+  }
+  .social-nav {
+    position: unset;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin-top: 7%;
+  }
+  .social-nav .nav-item {
+    width: auto;
+    margin-right: 1rem;
+  }
+  .buyer-btn {
+    padding: 4px;
+  }
+  #main-page-img {
+    height: 760px;
+    width: 480px;
+  }
+  .buyer-select-container {
+    display: none;
+  }
+  .buyer-select-container-mobile {
+    display: block;
+  }
+  #formController {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 60px auto;
+  }
+  .predict-price {
+    width: 55%;
+  }
+  #buyer-form {
+    margin-top: 185px;
+  }
+  .App {
+    overflow: auto;
+  }
+  .forum-bg {
+    background-position: center;
+    height: 100%;
+  }
+  .forum-form-container {
+    flex-wrap: wrap;
+    padding-top: 10%;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-content: center center;
+    /* padding: 5%; */
+  }
+  .forum-form .forum-textarea {
+    background-color: transparent;
+    height: 100px !important;
+    border: 1px solid black;
+    color: darkblue;
+    font-weight: bold;
+  }
+  .main-item {
+    width: 90%;
+    height: 70%;
+  }
+  .landingText {
+    margin-top: 0px !important;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .buyer-select-container > .btn,
+  .btn {
+    font-size: 1rem !important;
+    width: 47%;
+  }
+  #main-page-img {
+    height: 760px;
+    width: 100%;
+  }
+  .buyer-select-container {
+    display: flex;
+  }
+  .buyer-select-container-mobile {
+    display: none;
+  }
+  #seller-bg-div {
+    top: -25%;
+  }
+  #formController {
+    width: 90%;
+    margin: 30% auto 40px;
+  }
+  #buyer-form {
+    margin-top: 370px;
+    opacity: 0.7;
+  }
+  .predict-price {
+    width: 35%;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-content: center center;
+    /* padding: 5%; */
+  }
+  .forum-bg {
+    background-position: center;
+    height: 100vh;
+  }
+  .login-form-col {
+    background-color: #c0c0c0;
+    opacity: 0.9;
+    height: 100vh;
+    padding-top: 60% !important;
+  }
+  .login-col {
+    flex: 0 0 50% !important;
+    max-width: inherit !important;
+  }
+  .login .row {
+    height: 100vh;
+  }
+  .forum-form-container {
+    padding-top: 9%;
+  }
+  .forum-form {
+    height: 500px;
+  }
+  .landingText {
+    margin-top: 0px !important;
+  }
+  #main-page-img-div {
+    top: -20%;
+  }
+  .form-margin.form-group {
+    margin-bottom: 18%;
+  }
+  .social-nav {
+    height: auto;
+    margin-top: 40%;
+  }
+  .seller#main-page-img-div {
+    top: -8%;
+  }
+  #predictionButton {
+    margin: 150px 0px 15px 0px;
+  }
+  .login-col.register-page {
+    padding-left: 0 !important;
+  }
+  .text {
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (width: 600px) {
+  .forum-bg {
+    height: 100vh;
+    background-position: center;
+  }
+ 
+}
+
+@media only screen and (width: 768px) {
+  #main-page-img-div {
+    top: -27%;
+  }
+  .seller#main-page-img-div {
+    top: -11%;
+  }
+  #formController {
+    width: 90%;
+    margin: 0 30px;
+  }
+  .card {
+    padding: 8px;
+  }
+  .social-nav {
+    margin-top: 36%;
+  }
+  .buyer-select-container > .btn,
+  .btn {
+    font-size: 0.67rem !important;
+  }
+  
+}
